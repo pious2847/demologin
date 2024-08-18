@@ -8,7 +8,6 @@ class AuthService {
   static Future<Map<String, dynamic>> login(User user) async {
     final dio = Dio();
     try {
-      final newuser = user;
       final response = await dio.post(
         "$APIURL/user/login",
         options: Options(
