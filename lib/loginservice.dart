@@ -9,7 +9,6 @@ class AuthService {
     final dio = Dio();
     try {
       final newuser = user;
-      print("User Passed Data: ${newuser.email}  ${newuser.password}");
       final response = await dio.post(
         "$APIURL/user/login",
         options: Options(
