@@ -21,7 +21,7 @@ class AuthService {
         },
       );
 
-      print('Response: $response');
+      // print('Response: $response');
 
       if (response.statusCode == 200) {
         final prefs = await SharedPreferences.getInstance();
